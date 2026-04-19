@@ -27,17 +27,17 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden}
-
+ 
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:var(--linen)}
 ::-webkit-scrollbar-thumb{background:var(--amber);border-radius:3px}
-
+ 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:20px 60px;display:flex;align-items:center;justify-content:space-between;transition:all .4s;background:rgba(248,243,234,0.97);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(196,129,58,0.15)}
 nav.scrolled{padding:14px 60px}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-
+ 
 .nav-logo-text{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--forest);font-weight:600;letter-spacing:.02em}
 .nav-logo-text span{color:var(--amber)}
 .nav-links{display:flex;align-items:center;gap:36px;list-style:none}
@@ -47,7 +47,7 @@ nav.scrolled{padding:14px 60px}
 .nav-book:hover{background:var(--amber);transform:translateY(-1px)}
 .hamburger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px}
 .hamburger span{display:block;width:22px;height:2px;background:var(--forest);transition:all .3s}
-
+ 
 /* ── HERO ── */
 .hero{height:100vh;position:relative;display:flex;align-items:center;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#1a2e14 0%,#0f1d0b 40%,#2d1e0a 100%)}
@@ -64,42 +64,42 @@ nav.scrolled{padding:14px 60px}
 .btn-primary:hover{background:var(--gold);transform:translateY(-2px);box-shadow:0 8px 24px rgba(196,129,58,.4)}
 .btn-ghost{border:1px solid rgba(248,243,234,.4);color:var(--cream);padding:15px 36px;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:400;text-decoration:none;transition:all .25s;display:inline-block}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
-
-
-
+ 
+ 
+ 
 .hero-stats{position:absolute;bottom:0;right:0;z-index:2;display:flex;gap:0}
 .hero-stat{background:rgba(30,43,26,.85);backdrop-filter:blur(10px);padding:20px 32px;text-align:center;border-left:1px solid rgba(196,129,58,.2)}
 .hero-stat-num{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--gold);font-weight:400;line-height:1}
 .hero-stat-label{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--smoke);margin-top:5px}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
-
+ 
 /* ── TRUST BAR ── */
 .trust-bar{background:var(--forest);padding:18px 60px;display:flex;align-items:center;justify-content:center;gap:56px;flex-wrap:wrap}
 .trust-item{display:flex;align-items:center;gap:10px;color:var(--smoke);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase}
 .trust-icon{color:var(--amber);font-size:1rem}
-
+ 
 /* ── SECTION COMMON ── */
 .section-tag{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
 .section-h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,3.8vw,3rem);font-weight:400;line-height:1.18;color:var(--forest)}
 .section-h2 em{font-style:italic;color:var(--amber)}
 .section-sub{font-size:.95rem;color:#6b6052;line-height:1.78;margin-top:14px;font-weight:300}
-
+ 
 /* ── CABINS SECTION ── */
 #cabins{padding:110px 60px;background:var(--white)}
 .cabins-header{text-align:center;margin-bottom:72px}
-
+ 
 /* Cabin Filter Tabs */
 .cabin-tabs{display:flex;justify-content:center;gap:0;margin-bottom:56px;border:1px solid rgba(74,103,65,.2);width:fit-content;margin-left:auto;margin-right:auto}
 .cabin-tab{padding:12px 32px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;background:transparent;border:none;cursor:pointer;color:#7a6f5e;font-family:'Jost',sans-serif;font-weight:500;transition:all .25s;position:relative}
 .cabin-tab.active{background:var(--forest);color:var(--cream)}
 .cabin-tab:not(.active):hover{background:var(--linen)}
-
+ 
 /* Cabin Cards */
 .cabin-card{display:none;grid-template-columns:1fr 1fr;min-height:600px;opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
 .cabin-card.active{display:grid;opacity:1;transform:translateY(0)}
 .cabin-card.reverse{direction:rtl}
 .cabin-card.reverse>*{direction:ltr}
-
+ 
 .cabin-embed-side{position:relative;overflow:hidden;background:var(--forest);display:flex;flex-direction:column}
 .cabin-embed-header{padding:24px 28px;background:var(--pine);display:flex;align-items:center;justify-content:space-between}
 .cabin-embed-label{background:var(--amber);color:var(--white);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;padding:6px 14px;font-weight:500}
@@ -107,24 +107,7 @@ nav.scrolled{padding:14px 60px}
 .cabin-embed-frame{flex:1;min-height:520px;border:none;width:100%}
 .cabin-embed-fallback{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:40px;text-align:center;background:var(--pine)}
 .cabin-embed-fallback p{color:var(--smoke);font-size:.88rem;line-height:1.6}
-
-/* ── PHOTO GALLERY ── */
-.cabin-gallery{position:relative;flex:1;min-height:520px;overflow:hidden;cursor:pointer}
-.cabin-gallery-slides{display:flex;height:100%;transition:transform .5s cubic-bezier(.4,0,.2,1)}
-.cabin-gallery-slide{min-width:100%;height:100%;position:relative;overflow:hidden}
-.cabin-gallery-slide img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
-.cabin-gallery:hover .cabin-gallery-slide img{transform:scale(1.04)}
-.gallery-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:10;background:rgba(15,25,11,.65);border:1px solid rgba(196,129,58,.4);color:var(--gold);width:42px;height:42px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;transition:all .2s;backdrop-filter:blur(6px)}
-.gallery-btn:hover{background:var(--amber);border-color:var(--amber);color:var(--white)}
-.gallery-prev{left:14px}
-.gallery-next{right:14px}
-.gallery-dots{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:10}
-.gallery-dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.45);cursor:pointer;transition:all .2s;border:none;padding:0}
-.gallery-dot.active{background:var(--gold);transform:scale(1.3)}
-.gallery-counter{position:absolute;top:14px;right:14px;background:rgba(15,25,11,.7);color:var(--smoke);font-size:.68rem;letter-spacing:.12em;padding:5px 12px;backdrop-filter:blur(6px)}
-.gallery-airbnb-link{position:absolute;bottom:16px;right:16px;background:var(--amber);color:var(--white);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px;text-decoration:none;font-weight:500;transition:all .2s;z-index:10}
-.gallery-airbnb-link:hover{background:var(--gold)}
-
+ 
 .cabin-info{background:var(--linen);padding:56px 52px;display:flex;flex-direction:column;justify-content:center}
 .cabin-name{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.2vw,2.2rem);font-weight:400;color:var(--forest);margin-bottom:6px;line-height:1.15}
 .cabin-tagline{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);margin-bottom:20px}
@@ -136,7 +119,7 @@ nav.scrolled{padding:14px 60px}
 .amenity{font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(74,103,65,.25);color:var(--moss);padding:5px 11px;transition:all .2s}
 .amenity:hover{background:var(--moss);color:var(--white);border-color:var(--moss)}
 .cabin-actions{display:flex;gap:12px;flex-wrap:wrap}
-
+ 
 /* ── RATINGS BREAKDOWN ── */
 .ratings-breakdown{background:var(--white);border:1px solid rgba(74,103,65,.15);padding:20px;margin-bottom:24px}
 .ratings-title{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bark);margin-bottom:14px;font-weight:500}
@@ -145,9 +128,9 @@ nav.scrolled{padding:14px 60px}
 .rating-bar-wrap{flex:1;height:4px;background:rgba(74,103,65,.15);border-radius:2px}
 .rating-bar-fill{height:100%;background:var(--amber);border-radius:2px;transition:width 1s ease}
 .rating-val{font-size:.72rem;color:var(--bark);font-weight:500;width:28px;text-align:right}
-
-
-
+ 
+ 
+ 
 /* ── NATURE BREAK ── */
 .nature-break{height:400px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .nature-break-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1800&q=80');background-size:cover;background-position:center;background-attachment:fixed;filter:brightness(.35)}
@@ -155,7 +138,7 @@ nav.scrolled{padding:14px 60px}
 .nature-break h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3.2rem);font-weight:400;margin-bottom:16px;text-shadow:0 2px 20px rgba(0,0,0,.8)}
 .nature-break h2 em{font-style:italic;color:var(--gold)}
 .nature-break p{font-size:1rem;font-weight:300;max-width:520px;margin:0 auto;text-shadow:0 1px 12px rgba(0,0,0,.9);color:#fff}
-
+ 
 /* ── EXPERIENCE ── */
 #experience{padding:100px 60px;background:var(--linen)}
 .exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px}
@@ -167,7 +150,7 @@ nav.scrolled{padding:14px 60px}
 .exp-emoji{font-size:1.8rem;margin-bottom:16px;display:block}
 .exp-title{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--forest);margin-bottom:10px;font-weight:400}
 .exp-desc{font-size:.85rem;line-height:1.75;color:#6b6052;font-weight:300}
-
+ 
 /* ── REVIEWS ── */
 #reviews{padding:100px 60px;background:var(--forest);position:relative;overflow:hidden}
 #reviews::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;border-radius:50%;background:rgba(196,129,58,.05)}
@@ -187,7 +170,7 @@ nav.scrolled{padding:14px 60px}
 .review-avatar{width:38px;height:38px;border-radius:50%;background:var(--moss);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;color:var(--gold);font-size:1rem;flex-shrink:0}
 .review-name{font-size:.8rem;font-weight:500;color:var(--white)}
 .review-location{font-size:.7rem;color:var(--smoke);margin-top:2px}
-
+ 
 /* ── COMPARE ── */
 #compare{padding:100px 60px;background:var(--white)}
 .compare-table{width:100%;margin-top:56px;border-collapse:collapse}
@@ -200,7 +183,7 @@ nav.scrolled{padding:14px 60px}
 .cross{color:#ccc;font-size:1.1rem}
 .compare-book-row td{padding:24px;background:var(--linen)}
 .compare-book-row td:first-child{background:var(--linen)}
-
+ 
 /* ── DATE PICKER ── */
 #availability{padding:80px 60px;background:var(--linen)}
 .avail-inner{max-width:860px;margin:0 auto;background:var(--white);padding:52px;border:1px solid rgba(74,103,65,.12)}
@@ -213,14 +196,35 @@ nav.scrolled{padding:14px 60px}
 .avail-result.show{display:block}
 .avail-result p{font-size:.9rem;color:var(--forest)}
 .avail-result strong{color:var(--amber)}
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
 /* ── ATTRACTIONS ── */
-
-
+#attractions{padding:100px 60px;background:var(--white)}
+.attractions-header{margin-bottom:48px}
+.attractions-cabin-toggle{display:flex;justify-content:flex-start;gap:0;margin-bottom:48px;border:1px solid rgba(74,103,65,.2);width:fit-content}
+.attr-tab{padding:11px 28px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;background:transparent;border:none;cursor:pointer;color:#7a6f5e;font-family:'Jost',sans-serif;font-weight:500;transition:all .25s}
+.attr-tab.active{background:var(--forest);color:var(--cream)}
+.attr-tab:not(.active):hover{background:var(--linen)}
+.attractions-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px}
+.attr-card{background:var(--linen);padding:24px 20px;position:relative;transition:transform .25s,box-shadow .25s;border-bottom:3px solid transparent}
+.attr-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(30,43,26,.1);border-bottom-color:var(--amber)}
+.attr-emoji{font-size:1.6rem;display:block;margin-bottom:10px}
+.attr-name{font-family:'Playfair Display',serif;font-size:.95rem;color:var(--forest);font-weight:400;line-height:1.3;margin-bottom:6px}
+.attr-type{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:12px;display:block}
+.attr-distance{display:flex;align-items:baseline;gap:5px;margin-bottom:4px}
+.attr-miles{font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--forest);font-weight:400;line-height:1}
+.attr-miles-label{font-size:.65rem;color:#8a7e6e;letter-spacing:.08em}
+.attr-time{font-size:.72rem;color:var(--moss);font-weight:500;letter-spacing:.04em}
+.attr-time::before{content:'⏱ '}
+@media(max-width:960px){
+  #attractions{padding:70px 24px}
+  .attractions-grid{grid-template-columns:repeat(2,1fr)}
+}
+ 
+ 
 /* ── CTA ── */
 #cta{padding:0;position:relative;height:520px;display:flex;align-items:center;overflow:hidden}
 .cta-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=1800&q=80');background-size:cover;background-position:center top;background-attachment:fixed}
@@ -234,7 +238,7 @@ nav.scrolled{padding:14px 60px}
 .cta-cabin-btn{background:rgba(248,243,234,.1);border:1px solid rgba(248,243,234,.3);color:var(--cream);padding:12px 24px;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;transition:all .25s;display:flex;flex-direction:column;align-items:flex-start;gap:2px}
 .cta-cabin-btn:hover{background:var(--amber);border-color:var(--amber)}
 .cta-cabin-btn small{font-size:.6rem;opacity:.7;letter-spacing:.1em}
-
+ 
 /* ── FOOTER ── */
 footer{background:var(--charcoal);padding:64px 60px 36px}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
@@ -247,18 +251,18 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
 .footer-col ul li a:hover{color:var(--gold)}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
 .footer-bottom p{font-size:.75rem;color:rgba(200,192,176,.45)}
-
-
+ 
+ 
 /* ── SCROLL REVEAL ── */
 .reveal{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
-
+ 
 /* ── MOBILE NAV ── */
 .mobile-menu{display:none;position:fixed;inset:0;background:var(--forest);z-index:190;flex-direction:column;align-items:center;justify-content:center;gap:32px}
 .mobile-menu.open{display:flex}
 .mobile-menu a{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--cream);text-decoration:none;font-style:italic}
 .mobile-menu a:hover{color:var(--gold)}
-
+ 
 /* ── RESPONSIVE ── */
 @media(max-width:960px){
   nav{padding:16px 24px}
@@ -281,7 +285,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
 </style>
 </head>
 <body>
-
+ 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#cabins" onclick="closeMobile()">Our Cabins</a>
@@ -291,7 +295,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
   
   <a href="#availability" onclick="closeMobile()" style="color:var(--gold)">Check Dates</a>
 </div>
-
+ 
 <!-- NAV -->
 <nav id="mainNav">
   <a href="#" class="nav-logo">
@@ -313,7 +317,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
     <span></span><span></span><span></span>
   </button>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
@@ -335,7 +339,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
     <div class="hero-stat"><div class="hero-stat-num">116+</div><div class="hero-stat-label">Happy Guests</div></div>
   </div>
 </section>
-
+ 
 <!-- TRUST BAR -->
 <div class="trust-bar">
   <div class="trust-item"><span class="trust-icon">🏆</span> Airbnb Guest Favorites</div>
@@ -344,7 +348,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
   <div class="trust-item"><span class="trust-icon">💬</span> Superhost Responsive</div>
   <div class="trust-item"><span class="trust-icon">🐻</span> Bear Country Views</div>
 </div>
-
+ 
 <!-- CABINS -->
 <section id="cabins">
   <div class="cabins-header reveal">
@@ -352,14 +356,14 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
     <h2 class="section-h2">Three Retreats, <em>One Standard</em> of Excellence</h2>
     <p class="section-sub">From a 4,459 sq ft lodge with an indoor pool to a cozy romantic haven — every Falcon property is curated, clean, and unforgettable.</p>
   </div>
-
+ 
   <!-- TABS -->
   <div class="cabin-tabs reveal">
     <button class="cabin-tab active" onclick="showCabin(0)">🏰 Falcon 9</button>
     <button class="cabin-tab" onclick="showCabin(1)">🌲 Falcon Nook</button>
     <button class="cabin-tab" onclick="showCabin(2)">💑 Falcon Crest</button>
   </div>
-
+ 
   <!-- CABIN 1: FALCON 9 -->
   <div class="cabin-card active" id="cabin-0">
     <div class="cabin-embed-side">
@@ -367,22 +371,19 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
         <span class="cabin-embed-label">🏆 Guest Favorite · Top 10%</span>
         <span class="cabin-embed-rating">⭐ 4.97 · 32 reviews</span>
       </div>
-      <div class="cabin-gallery" id="gallery-0">
-        <div class="cabin-gallery-slides" id="slides-0">
-          <div class="cabin-gallery-slide"><img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-1415966370191638354/original/25e8f73f-846d-4e53-a696-1b63207c6a59.jpeg?im_w=1200" alt="Falcon 9"/></div>
-        </div>
-        <div class="gallery-counter" id="counter-0" style="display:none">1 / 1</div>
-        <div class="gallery-dots" id="dots-0" style="display:none">
-          <button class="gallery-dot active" onclick="galleryGo(0,0)"></button>
-        </div>
-        <a href="https://www.airbnb.com/rooms/1415966370191638354" target="_blank" class="gallery-airbnb-link">View on Airbnb ↗</a>
-      </div>
+      <iframe class="cabin-embed-frame"
+        src="https://www.airbnb.com/rooms/1415966370191638354?source=embed_widget"
+        title="Falcon 9 on Airbnb"
+        loading="lazy"
+        allow="fullscreen"
+        frameborder="0">
+      </iframe>
     </div>
     <div class="cabin-info">
       <div class="cabin-tagline">Falcon 9 by Getaway &amp; Stay · Cedar Falls, Sevierville</div>
       <h3 class="cabin-name">The Ultimate Family Lodge</h3>
-      <p class="cabin-desc">Experience Scandinavian-inspired luxury in our flagship 4,459 sq ft lodge. Four king suites plus a queen bunk bed sleep up to 12 comfortably. A climate-controlled indoor gunite pool, private barrel sauna, cinematic theater room, and championship game room make this the Smokies' most complete retreat — perfect for large families and groups.</p>
-
+      <p class="cabin-desc">Experience Scandinavian-inspired luxury in our flagship 4,459 sq ft lodge. Four king suites plus a twin XL over queen bunk bed sleep up to 12 comfortably. A climate-controlled indoor gunite pool, private barrel sauna, cinematic theater room, and championship game room make this the Smokies' most complete retreat — perfect for large families and groups.</p>
+ 
       <div class="ratings-breakdown">
         <div class="ratings-title">Guest Ratings</div>
         <div class="rating-row"><span class="rating-label">Cleanliness</span><div class="rating-bar-wrap"><div class="rating-bar-fill" style="width:100%"></div></div><span class="rating-val">5.0</span></div>
@@ -391,7 +392,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
         <div class="rating-row"><span class="rating-label">Communication</span><div class="rating-bar-wrap"><div class="rating-bar-fill" style="width:100%"></div></div><span class="rating-val">5.0</span></div>
         <div class="rating-row"><span class="rating-label">Value</span><div class="rating-bar-wrap"><div class="rating-bar-fill" style="width:96%"></div></div><span class="rating-val">4.8</span></div>
       </div>
-
+ 
       <div class="cabin-specs-row">
         <div class="spec-item"><span class="spec-icon">🛏</span> 4 Suites + Queen Bunk</div>
         <div class="spec-item"><span class="spec-icon">🚿</span> 4.5 Baths</div>
@@ -419,7 +420,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
       </div>
   </div>
   </div>
-
+ 
   <!-- CABIN 2: FALCON NOOK -->
   <div class="cabin-card" id="cabin-1">
     <div class="cabin-embed-side">
@@ -427,22 +428,19 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
         <span class="cabin-embed-label">🌲 Family Favorite</span>
         <span class="cabin-embed-rating">⭐ 4.83 · 6 reviews</span>
       </div>
-      <div class="cabin-gallery" id="gallery-1">
-        <div class="cabin-gallery-slides" id="slides-1">
-          <div class="cabin-gallery-slide"><img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-1593500765104829669/original/073069f3-9790-46af-b69a-44fc75f7c462.jpeg?im_w=1200" alt="Falcon Little Nook"/></div>
-        </div>
-        <div class="gallery-counter" id="counter-1" style="display:none">1 / 1</div>
-        <div class="gallery-dots" id="dots-1" style="display:none">
-          <button class="gallery-dot active" onclick="galleryGo(1,0)"></button>
-        </div>
-        <a href="https://www.airbnb.com/rooms/1593500765104829669" target="_blank" class="gallery-airbnb-link">View on Airbnb ↗</a>
-      </div>
+      <iframe class="cabin-embed-frame"
+        src="https://www.airbnb.com/rooms/1593500765104829669?source=embed_widget"
+        title="Falcon Nook on Airbnb"
+        loading="lazy"
+        allow="fullscreen"
+        frameborder="0">
+      </iframe>
     </div>
     <div class="cabin-info">
       <div class="cabin-tagline">Falcon Nook by Getaway &amp; Stay · Sequoia Heights, Pigeon Forge</div>
       <h3 class="cabin-name">Cozy Mountain Nook</h3>
-      <p class="cabin-desc">A thoughtfully designed 3-bedroom cabin that blends comfort and style in the heart of Pigeon Forge. Enjoy a fully stocked kitchen, cozy fireplace, private hot tub, and a deck with a porch swing and grill — all just minutes from Dollywood, The Island, and everything the Smokies offer. Perfect for families and friend groups.</p>
-
+      <p class="cabin-desc">A thoughtfully designed 3-bedroom cabin that blends comfort and style in the heart of Pigeon Forge. Enjoy a fully stocked kitchen, cozy fireplace, private hot tub with mountain views, and a deck with a porch swing and grill — all just minutes from Dollywood, The Island, and everything the Smokies offer. Perfect for families and friend groups.</p>
+ 
       <div class="ratings-breakdown">
         <div class="ratings-title">Guest Ratings</div>
         <div class="rating-row"><span class="rating-label">Cleanliness</span><div class="rating-bar-wrap"><div class="rating-bar-fill" style="width:90%"></div></div><span class="rating-val">4.5</span></div>
@@ -451,7 +449,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
         <div class="rating-row"><span class="rating-label">Communication</span><div class="rating-bar-wrap"><div class="rating-bar-fill" style="width:100%"></div></div><span class="rating-val">5.0</span></div>
         <div class="rating-row"><span class="rating-label">Value</span><div class="rating-bar-wrap"><div class="rating-bar-fill" style="width:90%"></div></div><span class="rating-val">4.5</span></div>
       </div>
-
+ 
       <div class="cabin-specs-row">
         <div class="spec-item"><span class="spec-icon">🛏</span> 3 Bedrooms</div>
         <div class="spec-item"><span class="spec-icon">🚿</span> 2.5 Baths</div>
@@ -477,7 +475,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
       </div>
   </div>
   </div>
-
+ 
   <!-- CABIN 3: FALCON CREST -->
   <div class="cabin-card" id="cabin-2">
     <div class="cabin-embed-side">
@@ -485,22 +483,19 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
         <span class="cabin-embed-label">💑 Romantic Retreat</span>
         <span class="cabin-embed-rating">⭐ 4.94 · 18 reviews</span>
       </div>
-      <div class="cabin-gallery" id="gallery-2">
-        <div class="cabin-gallery-slides" id="slides-2">
-          <div class="cabin-gallery-slide"><img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-1570536696649357038/original/9dffda66-93ac-4d92-945c-3b8feb174b3e.jpeg?im_w=1200" alt="Falcon Crest"/></div>
-        </div>
-        <div class="gallery-counter" id="counter-2" style="display:none">1 / 1</div>
-        <div class="gallery-dots" id="dots-2" style="display:none">
-          <button class="gallery-dot active" onclick="galleryGo(2,0)"></button>
-        </div>
-        <a href="https://www.airbnb.com/rooms/1570536696649357038" target="_blank" class="gallery-airbnb-link">View on Airbnb ↗</a>
-      </div>
+      <iframe class="cabin-embed-frame"
+        src="https://www.airbnb.com/rooms/1570536696649357038?source=embed_widget"
+        title="Falcon Crest on Airbnb"
+        loading="lazy"
+        allow="fullscreen"
+        frameborder="0">
+      </iframe>
     </div>
     <div class="cabin-info">
       <div class="cabin-tagline">Falcon Crest by Getaway &amp; Stay · Sevierville</div>
       <h3 class="cabin-name">Romantic Couples Escape</h3>
       <p class="cabin-desc">Crafted for couples seeking intimacy and serenity. This beautifully designed 678 sq ft luxury cabin sleeps up to 4 with a king master suite and queen pullout sofa. Features a private sauna, steaming hot tub, swinging daybed, cozy electric fireplace, and a loft media room. Past guests have celebrated honeymoons and anniversaries here — and always come back. Pure romance in the Smokies.</p>
-
+ 
       <div class="ratings-breakdown">
         <div class="ratings-title">Guest Ratings</div>
         <div class="rating-row"><span class="rating-label">Cleanliness</span><div class="rating-bar-wrap"><div class="rating-bar-fill" style="width:100%"></div></div><span class="rating-val">5.0</span></div>
@@ -509,7 +504,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
         <div class="rating-row"><span class="rating-label">Communication</span><div class="rating-bar-wrap"><div class="rating-bar-fill" style="width:100%"></div></div><span class="rating-val">5.0</span></div>
         <div class="rating-row"><span class="rating-label">Value</span><div class="rating-bar-wrap"><div class="rating-bar-fill" style="width:98%"></div></div><span class="rating-val">4.9</span></div>
       </div>
-
+ 
       <div class="cabin-specs-row">
         <div class="spec-item"><span class="spec-icon">🛏</span> 1 King + Pullout Sofa</div>
         <div class="spec-item"><span class="spec-icon">🚿</span> 1 Full Bath</div>
@@ -536,33 +531,50 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
   </div>
   </div>
 </section>
-
+ 
 <!-- NATURE BREAK -->
 <div class="nature-break">
   <div class="nature-break-bg"></div>
   <div class="nature-break-content">
     <h2>Nestled in the Heart of the <em>Great Smokies</em></h2>
-    <p>Minutes from Dollywood, Gatlinburg, and the Great Smoky Mountains National Park — yet worlds away from the everyday.</p>
+    <p>Minutes from Dollywood, Gatlinburg, and the National Park — yet worlds away from the everyday.</p>
   </div>
 </div>
-
+ 
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="reveal">
     <span class="section-tag">Why Choose Us</span>
     <h2 class="section-h2">Every Detail, <em>Thoughtfully</em> Considered</h2>
-    <p class="section-sub">Falcon Cabins is more than a booking. It's a promise that every cabin exceeds the photos, every host response is instant, and every stay becomes a story worth telling.</p>
+    <p class="section-sub">Getaway &amp; Stay is more than a booking. It's a promise that every cabin exceeds the photos, every host response is instant, and every stay becomes a story worth telling.</p>
   </div>
   <div class="exp-grid reveal">
-    <div class="exp-card"><div class="exp-num">01</div><span class="exp-emoji">🏊</span><div class="exp-title">Indoor Pool &amp; Spa</div><p class="exp-desc">Falcon 9's climate-controlled gunite pool means swimming year-round — rain, shine, or snow. Seamlessly transition from an indoor swim to the covered hot tub, followed by a rustic, outdoor sauna experience</p></div>
-    <div class="exp-card"><div class="exp-num">02</div><span class="exp-emoji">🌄</span><div class="exp-title">Breathtaking Views</div><p class="exp-desc">Wake up to mist rolling over ridgelines. Every cabin is positioned to frame the Smokies — from panoramic mountain views to peaceful wooded canopies.</p></div>
+    <div class="exp-card"><div class="exp-num">01</div><span class="exp-emoji">🏊</span><div class="exp-title">Indoor Pool &amp; Spa</div><p class="exp-desc">Falcon 9's climate-controlled gunite pool means swimming year-round — rain, shine, or snow. Hop from pool to hot tub to barrel sauna without ever stepping outside.</p></div>
+    <div class="exp-card"><div class="exp-num">02</div><span class="exp-emoji">🌄</span><div class="exp-title">Breathtaking Views</div><p class="exp-desc">Wake up to mist rolling over ridgelines. Every cabin is positioned to frame the Smokies — from panoramic cedar falls views to peaceful wooded canopies.</p></div>
     <div class="exp-card"><div class="exp-num">03</div><span class="exp-emoji">🍳</span><div class="exp-title">Fully Stocked Kitchens</div><p class="exp-desc">Chef's kitchens with quartz counters, stainless appliances, and a coffee bar already loaded. Cook in, dine out — either way, you're ready from the moment you arrive.</p></div>
     <div class="exp-card"><div class="exp-num">04</div><span class="exp-emoji">🎬</span><div class="exp-title">Entertainment for All</div><p class="exp-desc">Theater rooms, arcade machines, pool tables, shuffleboard, basketball hoops — even when the weather doesn't cooperate, you'll have the best time of your life indoors.</p></div>
     <div class="exp-card"><div class="exp-num">05</div><span class="exp-emoji">💬</span><div class="exp-title">Superhosts, Always On</div><p class="exp-desc">Thomas and the Getaway &amp; Stay team respond within minutes — not hours. Issues get fixed fast. Guests consistently call it the most responsive host they've ever had.</p></div>
     <div class="exp-card"><div class="exp-num">06</div><span class="exp-emoji">✨</span><div class="exp-title">Spotless Every Time</div><p class="exp-desc">Professional cleaning crews treat every turnover like an opening night. Guests consistently rate cleanliness 5.0 — you'll notice the difference the moment you walk in.</p></div>
   </div>
 </section>
-
+ 
+<!-- ATTRACTIONS -->
+<section id="attractions">
+  <div class="attractions-header reveal">
+    <span class="section-tag">Explore the Area</span>
+    <h2 class="section-h2">Everything the <em>Smokies</em> Have to Offer</h2>
+    <p class="section-sub">World-class attractions are right outside your door. Select your cabin to see exact driving distances.</p>
+  </div>
+  <div class="attractions-cabin-toggle reveal">
+    <button class="attr-tab active" onclick="showAttractions('falcon9')">🏰 Falcon 9</button>
+    <button class="attr-tab" onclick="showAttractions('nook')">🌲 Falcon Nook</button>
+    <button class="attr-tab" onclick="showAttractions('crest')">💑 Falcon Crest</button>
+  </div>
+  <div class="attractions-grid reveal" id="attractionsGrid">
+    <!-- filled by JS -->
+  </div>
+</section>
+ 
 <!-- REVIEWS -->
 <section id="reviews">
   <div class="reviews-header reveal">
@@ -636,7 +648,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
     </div>
   </div>
 </section>
-
+ 
 <!-- COMPARE -->
 <section id="compare">
   <div class="reveal">
@@ -657,7 +669,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
     <tbody>
       <tr><td>Rating</td><td>⭐ 4.97 (32 reviews)</td><td>⭐ 4.83 (6 reviews)</td><td>⭐ 4.94 (18 reviews)</td></tr>
       <tr><td>Size</td><td>4,459 sq ft</td><td>1,200 sq ft</td><td>678 sq ft</td></tr>
-      <tr><td>Bedrooms</td><td>4 King Suites + Queen Bunk</td><td>2 King + Loft Beds</td><td>1 King + Pullout Sofa</td></tr>
+      <tr><td>Bedrooms</td><td>4 King Suites + Bunk</td><td>2 King + Loft Bunk</td><td>1 King + Pullout Sofa</td></tr>
       <tr><td>Bathrooms</td><td>4.5 Baths</td><td>2.5 Baths</td><td>1 Full Bath</td></tr>
       <tr><td>Max Guests</td><td>12 Guests</td><td>8 Guests</td><td>4 Guests</td></tr>
       <tr><td>Indoor Pool</td><td><span class="check">✔</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
@@ -679,7 +691,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
   </table>
   </div>
 </section>
-
+ 
 <!-- AVAILABILITY -->
 <section id="availability">
   <div class="avail-inner reveal">
@@ -711,9 +723,9 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
     <div class="avail-result" id="availResult"></div>
   </div>
 </section>
-
-
-
+ 
+ 
+ 
 <!-- CTA -->
 <section id="cta">
   <div class="cta-bg"></div>
@@ -738,7 +750,7 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
@@ -780,18 +792,18 @@ footer{background:var(--charcoal);padding:64px 60px 36px}
     </div>
   </div>
 </footer>
-
-
-
+ 
+ 
+ 
 <script>
 // ── NAV ──
 const nav = document.getElementById('mainNav');
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 60));
-
+ 
 // ── MOBILE MENU ──
 function toggleMobile(){ document.getElementById('mobileMenu').classList.toggle('open') }
 function closeMobile(){ document.getElementById('mobileMenu').classList.remove('open') }
-
+ 
 // ── CABIN TABS ──
 function showCabin(idx){
   document.querySelectorAll('.cabin-card').forEach((c,i)=>{
@@ -801,9 +813,9 @@ function showCabin(idx){
     t.classList.toggle('active', i===idx);
   });
 }
-
-
-
+ 
+ 
+ 
 // ── REVIEW FILTER ──
 function filterReviews(cabin){
   document.querySelectorAll('.review-filter-btn').forEach(b=>b.classList.remove('active'));
@@ -812,7 +824,7 @@ function filterReviews(cabin){
     c.style.display = (cabin==='all'||c.dataset.cabin===cabin) ? 'block' : 'none';
   });
 }
-
+ 
 // ── AVAILABILITY CHECK ──
 function checkAvailability(){
   const cabin = document.getElementById('avCabin').value;
@@ -832,40 +844,111 @@ document.getElementById('avCheckin').addEventListener('change',function(){
   const d=new Date(this.value); d.setDate(d.getDate()+1);
   document.getElementById('avCheckout').min=d.toISOString().split('T')[0];
 });
-
-
-
+ 
+ 
+ 
 // ── SCROLL REVEAL ──
 const revealObs = new IntersectionObserver(entries=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
 },{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
-
-// ── PHOTO GALLERIES ──
-const galleryCurrent = [0, 0, 0];
-function galleryUpdate(g) {
-  const slides = document.getElementById('slides-' + g);
-  const dots = document.getElementById('dots-' + g).querySelectorAll('.gallery-dot');
-  const counter = document.getElementById('counter-' + g);
-  const total = dots.length;
-  slides.style.transform = 'translateX(-' + (galleryCurrent[g] * 100) + '%)';
-  dots.forEach((d, i) => d.classList.toggle('active', i === galleryCurrent[g]));
-  counter.textContent = (galleryCurrent[g] + 1) + ' / ' + total;
+ 
+ 
+// ── ATTRACTIONS ──
+// Distances from exact addresses:
+// Falcon 9:     2119 Double Oaks Way, Sevierville TN
+// Falcon Nook:  1932 Tipi Way, Pigeon Forge TN
+// Falcon Crest: 1687 Fantasy Lane, Sevierville TN
+const attractions = [
+  {
+    emoji: '🎡', name: 'Dollywood', type: 'Theme Park · Pigeon Forge',
+    falcon9:  { miles: 9.1,  mins: 16 },
+    nook:     { miles: 3.2,  mins: 8  },
+    crest:    { miles: 7.4,  mins: 13 }
+  },
+  {
+    emoji: '🏔', name: 'Great Smoky Mountains National Park', type: 'National Park · Gatlinburg Entrance',
+    falcon9:  { miles: 17.8, mins: 27 },
+    nook:     { miles: 9.4,  mins: 17 },
+    crest:    { miles: 15.6, mins: 24 }
+  },
+  {
+    emoji: '🚢', name: 'Titanic Museum', type: 'Museum · Pigeon Forge',
+    falcon9:  { miles: 10.3, mins: 18 },
+    nook:     { miles: 1.4,  mins: 5  },
+    crest:    { miles: 8.6,  mins: 15 }
+  },
+  {
+    emoji: '🌿', name: 'Downtown Gatlinburg', type: 'Mountain Town · Arts & Dining',
+    falcon9:  { miles: 17.2, mins: 25 },
+    nook:     { miles: 8.1,  mins: 16 },
+    crest:    { miles: 15.0, mins: 22 }
+  },
+  {
+    emoji: '🎢', name: 'Anakeesta', type: 'Mountaintop Adventure · Gatlinburg',
+    falcon9:  { miles: 17.5, mins: 26 },
+    nook:     { miles: 8.4,  mins: 17 },
+    crest:    { miles: 15.3, mins: 23 }
+  },
+  {
+    emoji: '🛍', name: 'The Island in Pigeon Forge', type: 'Shopping & Entertainment',
+    falcon9:  { miles: 10.8, mins: 19 },
+    nook:     { miles: 2.1,  mins: 7  },
+    crest:    { miles: 9.0,  mins: 16 }
+  },
+  {
+    emoji: '⛷', name: 'Ober Mountain', type: 'Ski & Aerial Tram · Gatlinburg',
+    falcon9:  { miles: 19.1, mins: 30 },
+    nook:     { miles: 10.0, mins: 21 },
+    crest:    { miles: 16.8, mins: 27 }
+  },
+  {
+    emoji: '🦅', name: "Clingmans Dome", type: 'Highest Peak · GSMNP',
+    falcon9:  { miles: 31.4, mins: 52 },
+    nook:     { miles: 23.0, mins: 42 },
+    crest:    { miles: 29.2, mins: 49 }
+  },
+  {
+    emoji: '🌊', name: "Dollywood's Splash Country", type: 'Water Park · Pigeon Forge',
+    falcon9:  { miles: 9.3,  mins: 16 },
+    nook:     { miles: 3.4,  mins: 8  },
+    crest:    { miles: 7.6,  mins: 13 }
+  },
+  {
+    emoji: '🤸', name: 'Legacy Mountain Ziplines', type: 'Adventure Ziplines · Sevierville',
+    falcon9:  { miles: 5.2,  mins: 11 },
+    nook:     { miles: 9.1,  mins: 17 },
+    crest:    { miles: 5.8,  mins: 12 }
+  }
+];
+ 
+let currentAttrCabin = 'falcon9';
+function showAttractions(cabin) {
+  currentAttrCabin = cabin;
+  document.querySelectorAll('.attr-tab').forEach((t,i) => {
+    t.classList.toggle('active', ['falcon9','nook','crest'][i] === cabin);
+  });
+  renderAttractions();
 }
-function galleryMove(g, dir) {
-  const total = document.getElementById('dots-' + g).querySelectorAll('.gallery-dot').length;
-  galleryCurrent[g] = (galleryCurrent[g] + dir + total) % total;
-  galleryUpdate(g);
+function renderAttractions() {
+  const grid = document.getElementById('attractionsGrid');
+  grid.innerHTML = attractions.map(a => {
+    const d = a[currentAttrCabin];
+    return `<div class="attr-card">
+      <span class="attr-emoji">${a.emoji}</span>
+      <div class="attr-name">${a.name}</div>
+      <span class="attr-type">${a.type}</span>
+      <div class="attr-distance">
+        <span class="attr-miles">${d.miles}</span>
+        <span class="attr-miles-label">miles</span>
+      </div>
+      <div class="attr-time">~${d.mins} min drive</div>
+    </div>`;
+  }).join('');
 }
-function galleryGo(g, idx) {
-  galleryCurrent[g] = idx;
-  galleryUpdate(g);
-}
-// Auto-advance galleries
-setInterval(() => { galleryMove(0, 1); }, 5000);
-setInterval(() => { galleryMove(1, 1); }, 5800);
-setInterval(() => { galleryMove(2, 1); }, 6600);
-
+renderAttractions();
+ 
+// ── DATE DEFAULTS ──
 const today = new Date();
 const tomorrow = new Date(today); tomorrow.setDate(today.getDate()+1);
 const nextWeek = new Date(today); nextWeek.setDate(today.getDate()+7);
